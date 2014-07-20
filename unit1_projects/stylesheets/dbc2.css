@@ -1,3 +1,126 @@
-.Header {
-	background-color: lightblue;
+body {
+	font-family: sans-serif;
+	margin: 1em;
+	max-width: 1000px;
+}
+
+/*********************************************************
+Header
+**********************************************************/
+#Header {
+	background-color: Lightblue;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#Header h1 {
+	font-family: 'Lobster', cursive;
+	color: Tomato;
+	font-size: 4em;
+	padding: 10px;
+	margin: 10px 0 10px 0;
+}
+
+/*********************************************************
+Sidebar
+**********************************************************/
+
+#Sidebar {
+	background-color: #A8D164;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 10px;
+	float: right;
+	display: block;
+	width: 15%;
+	height: 300px;
+}
+
+#OtherLinks {
+	font-size: 1em;
+}
+
+#Sidebar ul, li{
+	list-style: none;
+	font-size: 14px;
+	padding: 0px;
+}
+
+
+
+/*********************************************************
+Psuedo-classes for Sidebar links
+**********************************************************/
+#Sidebar a:link {
+	text-decoration: none;
+}
+
+#Sidebar a:hover {
+	color: Green;
+}
+
+#Sidebar a:visted {
+	color: Purple;
+}
+
+
+/*********************************************************
+Content Area
+**********************************************************/
+#Content {
+	width: 60%;
+	margin: 0 auto;
+}
+
+#Fashion h2{
+	font-family: 'Lobster', cursive;
+	color: Tomato;
+	border-top: 5px solid Tomato;
+	border-bottom: 3px dashed Tomato;
+	padding: 10px;
+}
+
+#Fashion article h3 {
+	text-decoration: underline;
+	font-size: 20px;
+	margin: 0;
+}
+
+article{
+	overflow: hidden;
+	border: 3px solid #FF9999;
+	border-radius: 20px;
+	padding: 1em;
+}
+
+article img{
+	width: 200px;
+	float: left;
+	margin: 10px;
+	border: 1px solid #FFF;
+	border-radius: 10px;
+}
+
+figcaption {
+	font-size: 12px;
+	width: 200px;
+	text-align: center;
+}
+
+/*********************************************************
+Footer
+**********************************************************/
+#Footer {
+	clear: both;
+	background-color: Lightblue;
+	margin: 10px auto;
+	padding: 5px 5px 5px 1em;
+	border-radius: 5px;
+	font-size: .75em;
+	color: Grey;
+}
+
+#Footer p{
+	text-align: center;
+
 }
