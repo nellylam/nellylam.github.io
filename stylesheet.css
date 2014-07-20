@@ -1,0 +1,115 @@
+
+/*********************************************************
+Header
+**********************************************************/
+header {
+	background-color: Grey;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 72px;
+	padding: .5em;
+	margin: 0;
+}
+
+/*********************************************************
+Nav Bar
+**********************************************************/
+nav {
+	background-color: LightBlue;
+}
+
+#NavLinks{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+#NavLinks li {
+	display: inline;
+}
+
+#NavLinks li a {
+	text-decoration: none;
+	padding: .2em 1em;
+}
+
+#NavLinks li a:hover{
+	color: Red;
+}
+
+/*********************************************************
+Sidebar
+**********************************************************/
+#Sidebar {
+	background-color: #A8D164;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 10px;
+	float: right;
+	display: block;
+	width: 15%;
+	height: auto;
+}
+
+
+
+/*********************************************************
+Sidebar -- Bio
+**********************************************************/
+#Bio {
+
+}
+
+
+
+
+/*********************************************************
+Sidebar -- Social Media
+**********************************************************/
+#SocialMedia h6{
+	margin:0;
+}
+
+
+#TwitterLogo img{
+	background-color: #00ACED;
+	border-radius: 4px;
+}
+
+#FacebookLogo img{
+	background-color: #3B5998;
+	border-radius: 4px;
+}
+
+#GithubLogo img{
+	background-color: #4183C4;
+	border-radius: 4px;
+}
+
+#GoogleplusLogo img{
+	background-color: #D14836;
+	border-radius: 4px;
+}
+
+
+
+/*********************************************************
+Blog Post
+**********************************************************/
+
+
+
+
+
+/*********************************************************
+Share Post
+**********************************************************/
+
+
+
+
+/*********************************************************
+Footer
+**********************************************************/
