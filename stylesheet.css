@@ -1,23 +1,57 @@
+/*********************************************************
+General-Body
+**********************************************************/
+body {
+	color: #303030;
+	margin: 0 auto;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #ecf0f1;
+}
+
+#wrapper{
+	max-width: 1024px;
+	background-color: white;
+	margin: 0 auto;
+	border-bottom: 2px solid #869dba;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+
+h2{
+	font-family: 'Tangerine', serif;
+	color: #869dba;
+	font-size: 36px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
 
 /*********************************************************
 Header
 **********************************************************/
 header {
-	background-color: Grey;
+	background-color: #d9f2f0;
 	text-align: center;
+	border-top: 5px solid #82374b;/* #990033 */
 }
 
 header h1 {
-	font-size: 72px;
-	padding: .5em;
+	font-family: 'Tangerine', cursive;
+	font-size: 96px;
+	padding: .25em;
 	margin: 0;
+	color: #b03476;
 }
 
 /*********************************************************
 Nav Bar
 **********************************************************/
 nav {
-	background-color: LightBlue;
+	background-color: #85d4de;
+	border-top: 1px dashed white;
+	padding: .25em;
+	font-weight: bold;
 }
 
 #NavLinks{
@@ -33,23 +67,44 @@ nav {
 #NavLinks li a {
 	text-decoration: none;
 	padding: .2em 1em;
+	color: #b03476;
+}
+
+#NavLinks li a:active {
+	color: #48647c;
+	font-weight: 2px;
 }
 
 #NavLinks li a:hover{
-	color: Red;
+	color: White;
+}
+
+#NavLinks li a:link {
+	text-decoration: none;
+}
+
+#NavLinks li a:visted {
+	color: Purple;
+}
+
+
+/*********************************************************
+Inner Wrapper
+**********************************************************/
+#innerwrapper{
+	padding: 10px;
 }
 
 /*********************************************************
 Sidebar
 **********************************************************/
 #Sidebar {
-	background-color: #A8D164;
+	background-color: #d9e8a7;
 	border-radius: 5px;
 	padding: 10px;
-	margin-top: 10px;
 	float: right;
 	display: block;
-	width: 15%;
+	width: 25%;
 	height: auto;
 }
 
@@ -62,8 +117,14 @@ Sidebar -- Bio
 
 }
 
+#Bio h3, p{
+	margin: 0;
+	margin-bottom: 5px;
+}
 
-
+.strike {
+	text-decoration: line-through;
+}
 
 /*********************************************************
 Sidebar -- Social Media
@@ -93,15 +154,52 @@ Sidebar -- Social Media
 	border-radius: 4px;
 }
 
-
+#LinkedInLogo img{
+	background-color: #007FB1;
+	border-radius: 4px;
+}
 
 /*********************************************************
 Blog Post
 **********************************************************/
+#BlogWrapper{
+	padding: 10px;
+}
 
+.postname {
+	font-family: 'Josefin Slab', serif;
+	font-size: 18px;
+	color: #b03476;
+	margin: 0 auto;
+}
 
+.author {
+	float: left;
+	font-size: 14px;
+	margin: 5px;
+}
 
+.postdate {
+	float: right;
+	font-size: 14px;
+	margin: 5px;
+}
 
+#BlogBox {
+	background-color: white;
+	border: 1px solid #b03476;
+	border-radius: 5px;
+	width: 60%;
+	padding: 10px;
+}
+
+article img{
+	width: 98%;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid #869dba;
+	border-radius: 2px;
+}
 
 /*********************************************************
 Share Post
@@ -113,3 +211,18 @@ Share Post
 /*********************************************************
 Footer
 **********************************************************/
+#Footer {
+	clear: both;
+	margin: 10px auto;
+	padding: 5px 5px 5px 1em;
+	font-size: 1em;
+	color: #303030;
+}
+
+#Footer p{
+	text-align: center;
+	font-size: 13px;
+}
+
+
+
