@@ -93,6 +93,7 @@ Inner Wrapper
 **********************************************************/
 #innerwrapper{
 	padding: 10px;
+	overflow: hidden;
 }
 
 /*********************************************************
@@ -113,8 +114,10 @@ Sidebar
 /*********************************************************
 Sidebar -- Bio
 **********************************************************/
-#Bio {
-
+#Bio img{
+	width: 25%;
+	border-radius: 5px;
+	float: left;
 }
 
 #Bio h3, p{
@@ -184,12 +187,15 @@ Blog Post
 	font-size: 14px;
 	margin: 5px;
 }
+.postheader{
+	overflow: hidden;
+}
 
 #BlogBox {
 	background-color: white;
 	border: 1px solid #b03476;
 	border-radius: 5px;
-	width: 60%;
+	width: 66%;
 	padding: 10px;
 }
 
@@ -199,6 +205,10 @@ article img{
 	margin: 0 auto;
 	border: 2px solid #869dba;
 	border-radius: 2px;
+}
+
+article p{
+	margin: .5em;
 }
 
 /*********************************************************
