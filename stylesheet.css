@@ -77,6 +77,7 @@ nav {
 
 #NavLinks li a:hover{
 	color: White;
+	text-shadow: 2px 2px 2px black;
 }
 
 #NavLinks li a:link {
@@ -116,6 +117,7 @@ Sidebar -- Bio
 **********************************************************/
 #Bio img{
 	width: 25%;
+	margin-right: 10px;
 	border-radius: 5px;
 	float: left;
 }
@@ -134,6 +136,7 @@ Sidebar -- Social Media
 **********************************************************/
 #SocialMedia h6{
 	margin:0;
+	font-size: 14px;
 }
 
 
@@ -171,7 +174,7 @@ Blog Post
 
 .postname {
 	font-family: 'Josefin Slab', serif;
-	font-size: 18px;
+	font-size: 24px;
 	color: #b03476;
 	margin: 0 auto;
 }
