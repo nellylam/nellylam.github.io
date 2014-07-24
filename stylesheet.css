@@ -1,7 +1,5 @@
 h1, h2{ /*reset for mobile browsers */
-
 font-weight: normal;
-
 }
 
 /*********************************************************
@@ -175,7 +173,7 @@ Sidebar -- Social Media
 Blog Post
 **********************************************************/
 #BlogWrapper{
-	padding: 10px;
+
 }
 
 .postname {
