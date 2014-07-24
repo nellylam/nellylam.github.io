@@ -5,11 +5,14 @@ font-weight: normal;
 /*********************************************************
 General-Body
 **********************************************************/
+
+
 body {
-	color: #303030;
+	color: #444;
 	margin: 0 auto;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	background-color: #ecf0f1;
+	font-weight: 400; 
 }
 
 #wrapper{
@@ -26,10 +29,33 @@ h2{
 	color: #869dba;
 	font-size: 36px;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
+a {
+	color: #b03476;
+}
+a:active {
+	color: #48647c;
+	font-weight: 2px;
+}
 
+a:hover{
+	color: #444;
+	text-decoration: none;
+}
+
+a:visted {
+	color: Purple;
+}
+
+#wrapper h4 {
+	font-family: 'Josefin Slab', serif;
+	font-size: 24px;
+	color: #b03476;
+	text-align: center;
+}
 
 /*********************************************************
 Header
@@ -58,37 +84,37 @@ nav {
 	font-weight: bold;
 }
 
-#NavLinks{
+#navlinks{
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	text-align: center;
 }
-#NavLinks li {
+#navlinks li {
 	display: inline;
 }
 
-#NavLinks li a {
+#navlinks li a {
 	text-decoration: none;
 	padding: .2em 1em;
 	color: #b03476;
 }
 
-#NavLinks li a:active {
+#navlinks li a:active {
 	color: #48647c;
 	font-weight: 2px;
 }
 
-#NavLinks li a:hover{
+#navlinks li a:hover{
 	color: White;
-	text-shadow: 2px 2px 2px black;
+	/*text-shadow: 2px 2px 2px black;*/
 }
 
-#NavLinks li a:link {
+#navlinks li a:link {
 	text-decoration: none;
 }
 
-#NavLinks li a:visted {
+#navlinks li a:visted {
 	color: Purple;
 }
 
@@ -104,7 +130,7 @@ Inner Wrapper
 /*********************************************************
 Sidebar
 **********************************************************/
-#Sidebar {
+#sidebar {
 	background-color: #d9e8a7;
 	border-radius: 5px;
 	padding: 10px;
@@ -115,20 +141,24 @@ Sidebar
 }
 
 
-
 /*********************************************************
 Sidebar -- Bio
 **********************************************************/
-#Bio img{
+#bio img{
 	width: 25%;
 	margin-right: 10px;
 	border-radius: 5px;
 	float: left;
 }
 
-#Bio h3, p{
+#bio h3, p{
 	margin: 0;
 	margin-bottom: 5px;
+}
+
+#bio p{
+	font-size: 14px;
+	line-height: 14px;
 }
 
 .strike {
@@ -138,41 +168,71 @@ Sidebar -- Bio
 /*********************************************************
 Sidebar -- Social Media
 **********************************************************/
-#SocialMedia h6{
+#socialmedia h6{
 	margin:0;
 	font-size: 14px;
 }
 
 
-#TwitterLogo img{
+#twitterlogo img{
 	background-color: #00ACED;
 	border-radius: 4px;
 }
 
-#FacebookLogo img{
+#facebooklogo img{
 	background-color: #3B5998;
 	border-radius: 4px;
 }
 
-#GithubLogo img{
+#githublogo img{
 	background-color: #4183C4;
 	border-radius: 4px;
 }
 
-#GoogleplusLogo img{
+#googlepluslogo img{
 	background-color: #D14836;
 	border-radius: 4px;
 }
 
-#LinkedInLogo img{
+#linkedinlogo img{
 	background-color: #007FB1;
 	border-radius: 4px;
 }
 
 /*********************************************************
+Sidebar -- Blog Links
+**********************************************************/
+
+#bloglinks {
+	list-style: none;
+	padding: 0;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+#bloglinks li a{
+	color: #b03476;
+}
+
+#bloglinks li a:active {
+	color: #48647c;
+	font-weight: 2px;
+}
+
+#bloglinks li a:hover{
+	color: #444;
+	text-decoration: none;
+}
+
+#bloglinks li a:visted {
+	color: Purple;
+}
+
+
+/*********************************************************
 Blog Post
 **********************************************************/
-#BlogWrapper{
+#blogwrapper{
 
 }
 
@@ -198,7 +258,7 @@ Blog Post
 	overflow: hidden;
 }
 
-#BlogBox {
+#blogbox {
 	background-color: white;
 	border: 1px solid #b03476;
 	border-radius: 5px;
@@ -216,6 +276,8 @@ article img{
 
 article p{
 	margin: .5em;
+	font-size: 14px;
+	line-height: 14px;
 }
 
 /*********************************************************
@@ -228,7 +290,7 @@ Share Post
 /*********************************************************
 Footer
 **********************************************************/
-#Footer {
+#footer {
 	clear: both;
 	margin: 10px auto;
 	padding: 5px 5px 5px 1em;
@@ -236,7 +298,7 @@ Footer
 	color: #303030;
 }
 
-#Footer p{
+#footer p{
 	text-align: center;
 	font-size: 13px;
 }
