@@ -402,6 +402,11 @@ Responsive Design
 	header h2{
 		font-size: 26px;
 	}
+
+	#giantbuttons ul li{
+		width: 250px;
+	}
+
 }
 
 @media screen and (min-width: 700px) {
