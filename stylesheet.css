@@ -70,7 +70,7 @@ header h1 {
 
 header h2{
 	font-family: 'Tangerine', serif;
-	color: #333;
+	color: #48647c;
 	font-size: 36px;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -298,7 +298,7 @@ Blog Post
 
 .postname {
 	font-family: 'Josefin Slab', serif;
-	font-size: 24px;
+	font-size: 30px;
 	color: #b03476;
 	margin: 0 auto;
 }
@@ -318,7 +318,7 @@ Blog Post
 	overflow: hidden;
 }
 
-#blogbox {
+.blogbox {
 	background-color: white;
 	border: 1px solid #b03476;
 	border-radius: 5px;
@@ -335,11 +335,30 @@ article img{
 }
 
 article p{
-	margin: .5em;
+	margin: 1em;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 18px;
 	margin-bottom: .75em;
 	margin-top: .75em;
+}
+
+article em{
+	color: #48647c;
+	font-weight: bold;
+	font-style: normal;
+	background-color: #ecf0f1;
+	padding: 0 .5em 0 .5em;
+}
+
+article blockquote{
+	background-color: #ecf0f1;
+	font-weight: bold;
+}
+
+article p.articleheadings{
+	font-weight: bold;
+	font-size: 20px;
+	margin: 1.5em .5em 1.5em .5em;
 }
 
 /*********************************************************
