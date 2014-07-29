@@ -69,9 +69,9 @@ header h1 {
 }
 
 header h2{
-	font-family: 'Tangerine', serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #48647c;
-	font-size: 36px;
+	font-size: 12px;
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: center;
@@ -402,7 +402,7 @@ Responsive Design
 	}
 
 	header h2{
-		font-size: 26px;
+		font-size: 14px;
 	}
 
 	#giantbuttons ul li{
@@ -433,7 +433,7 @@ Responsive Design
 	header h2{
 		text-align: left;
 		margin-left: 2em;
-		font-size: 26px;
+		font-size: 18px;
 	}
 }
 
