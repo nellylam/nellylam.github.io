@@ -342,6 +342,10 @@ article p{
 }
 
 article em{
+	font-style: italic bold;
+}
+
+article em.code{
 	color: #48647c;
 	font-weight: bold;
 	font-style: normal;
@@ -352,6 +356,7 @@ article em{
 article blockquote{
 	background-color: #ecf0f1;
 	font-weight: bold;
+	padding: .25em;
 }
 
 article p.articleheadings{
@@ -360,9 +365,11 @@ article p.articleheadings{
 	margin: 1.5em .5em .75em .5em;
 }
 
-article ul{
+article ul, ol{
 	font-size: 14px;
 }
+
+
 /*********************************************************
 Share Post
 **********************************************************/
