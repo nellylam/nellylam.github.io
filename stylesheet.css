@@ -32,7 +32,7 @@ a:active {
 }
 
 a:hover{
-	color: #d9f2f0;
+	color: #48647c;
 	text-decoration: none;
 }
 
@@ -352,6 +352,11 @@ article img{
 	border-radius: 2px;
 }
 
+article figure{
+	width: 98%;
+	margin: 0 auto;
+}
+
 article figcaption{
 	font-size: 12px;
 	text-align: right;
@@ -462,7 +467,7 @@ Responsive Design
 	}
 
 	.blogbox{
-		width: 100%;
+		/*width: 100%;*/
 		border: none;
 		padding: .5em;
 		border-top: 1px solid #ddd;
