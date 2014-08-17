@@ -9,20 +9,18 @@ General-Body
 body {
 	color: #444;
 	margin: 0 auto;
-	font-family: 'Open Sans', sans-serif;
-	background-color: #ecf0f1;
-	font-weight: 400; 
-	/*background-image:url('images/canvas.jpg');*/
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	font-weight: 300; 
 	background-repeat:repeat;
 }
-/*
+
 #wrapper{
-	max-width: 1024px;
-	background-color: white;
+	background-color: #ecf0f1;
 	margin: 0 auto;
 	border-bottom: 2px solid #869dba;
 	box-shadow: 2px 2px 2px #888888;
-}*/
+}
 
 
 a {
@@ -30,11 +28,11 @@ a {
 }
 a:active {
 	color: #48647c;
-	font-weight: 2px;
+	font-weight: bold;
 }
 
 a:hover{
-	color: #444;
+	color: #d9f2f0;
 	text-decoration: none;
 }
 
@@ -42,21 +40,19 @@ a:visted {
 	color: Purple;
 }
 
-#pagetitle {
-	font-family: 'Josefin Slab', serif;
-	font-size: 24px;
-	color: #b03476;
-	text-align: center;
-}
+
 
 /*********************************************************
 Header
 **********************************************************/
 header {
-	background-color: #d9f2f0;
-	text-align: center;
-	border-top: 5px solid #82374b;
-	padding-bottom: 1em;	
+	background-color: white;
+	text-align: center;	
+}
+
+header hgroup{
+	margin-top: 40px;
+
 }
 
 header h1 {
@@ -65,16 +61,28 @@ header h1 {
 	padding: .25em;
 	padding-bottom: 0;
 	margin: 0;
+	margin-bottom: -8px;
 	color: #b03476;
 }
 
 header h2{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #48647c;
-	font-size: 12px;
+	font-size: 20px;
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: center;
+}
+
+#pagetitle {
+	font-family: 'Roboto', serif;
+	font-size: 24px;
+	color: #48647c;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background-color: #ecf0f1;
+
 }
 
 /*********************************************************
@@ -82,8 +90,9 @@ Nav Bar
 **********************************************************/
 
 #navlinks {
-	background-color: #85d4de;
-	border-top: 1px dashed white;
+	background-color: #d9f2f0;
+	border-top: 5px solid #82374b;
+	box-shadow: 0 0 3px #333;
 	padding: .25em;
 	list-style: none;
 	float: left;
@@ -91,6 +100,9 @@ Nav Bar
 	position: relative;
 	z-index:5;
 	margin-bottom: 0;
+	margin-top: 0;
+	position: fixed;
+	top: 0;
 }
 
 
@@ -138,16 +150,17 @@ Nav Bar
 }
 
 #navlinks li:hover a{
-	background:#85d4de;
+	background: #d9f2f0;
 }
 
 #navlinks li:hover ul a{ 
     text-decoration:none;
-    color: #b03476;
+    color: #48647c; /* dark blue */
 }
 
 #navlinks li:hover ul li a:hover{
-    background:#d9f2f0;
+    background: white;
+    color: #48647c;
 }
 
 
@@ -157,6 +170,7 @@ Inner Wrapper
 #innerwrapper{
 	padding: 10px;
 	overflow: hidden;
+	/*background-color: white;*/
 	background-image: url('images/canvas.jpg');
 	background-repeat: repeat;
 }
@@ -167,22 +181,44 @@ Inner Wrapper
 }
 
 #giantbuttons ul li{
-	font-family: 'Josefin-Slab', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	padding: .25em;
 	margin: 0 auto;
+	margin-bottom: .5em;
 	border: 4px solid white;
 	border-radius: 150px;
 	width: 300px;
 	text-align: center;
+	display: block;
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#giantbuttons ul li:hover{
+	border: 4px solid #48647c;
+	background-color: #d9f2f0;
 }
 
 #giantbuttons ul li a{
 	text-decoration: none;
+	display:block;
 }
 
 #giantbuttons ul li a:hover{
-	color: white;
+	color: #48647c;
+}
+
+.ContactButtons h3{
+	text-align: center;
+}
+
+#buttonwrapper img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 
@@ -190,8 +226,12 @@ Inner Wrapper
 Sidebar
 **********************************************************/
 #sidebar {
-	background-color: #d9e8a7;
-	border-radius: 5px;
+	background-color: white;
+	border-top: 5px solid #82374b;
+	border-bottom: 2px solid #869dba;
+	/*border-bottom: 1px solid #ddd;*/
+	/*border-top: 1px solid #ddd;*/
+	box-shadow: 2px 2px 2px #888888;
 	padding: 10px;
 	float: right;
 	display: block;
@@ -216,8 +256,9 @@ Sidebar -- Bio
 }
 
 #bio p{
-	font-size: 14px;
-	line-height: 16px;
+	font-family: 'Domine';
+	font-size: 18px;
+	line-height: 20px;
 }
 
 .strike {
@@ -258,35 +299,6 @@ Sidebar -- Social Media
 	border-radius: 4px;
 }
 
-/*********************************************************
-Sidebar -- Blog Links--- REMOVED
-**********************************************************/
-/*
-#bloglinks {
-	list-style: none;
-	padding: 0;
-	font-size: 14px;
-	line-height: 18px;
-}
-
-#bloglinks li a{
-	color: #b03476;
-}
-
-#bloglinks li a:active {
-	color: #48647c;
-	font-weight: 2px;
-}
-
-#bloglinks li a:hover{
-	color: #444;
-	text-decoration: none;
-}
-
-#bloglinks li a:visted {
-	color: Purple;
-}
-*/
 
 /*********************************************************
 Blog Post
@@ -297,22 +309,26 @@ Blog Post
 }
 
 .postname {
-	font-family: 'Josefin Slab', serif;
+	font-family: 'Roboto';
+	font-weight: 300;
 	font-size: 30px;
 	color: #b03476;
 	margin: 0 auto;
 }
 
 .author {
+	font-family: 'Roboto';
 	float: left;
 	font-size: 14px;
-	margin: 5px;
+	margin-top: 5px;
+	margin-bottom: 0;
 }
 
 .postdate {
 	float: right;
 	font-size: 14px;
-	margin: 5px;
+	margin-top: 5px;
+	margin-bottom: 0;
 }
 .postheader{
 	overflow: hidden;
@@ -320,9 +336,12 @@ Blog Post
 
 .blogbox {
 	background-color: white;
-	border: 1px solid #b03476;
-	border-radius: 5px;
-	padding: 10px;
+	border-top: 5px solid #82374b;
+	border-bottom: 2px solid #869dba;
+	padding: .5em;
+	/*border-top: 1px solid #ddd;*/
+	/*border-bottom: 1px solid #ddd;*/
+	box-shadow: 2px 2px 2px #888888;
 }
 
 article img{
@@ -339,40 +358,75 @@ article figcaption{
 }
 
 article p{
-	margin: .75em;
-	font-size: 14px;
-	line-height: 18px;
+	font-family: 'Domine', serif;
+	font-size: 18px;
+	line-height: 24px;
 	margin-bottom: .75em;
 	margin-top: .75em;
+	color: #444;
 }
 
 article em{
-	font-style: italic bold;
+	font-style: italic-bold;
 }
 
 article em.code{
 	color: #48647c;
-	font-weight: bold;
+	font-family: 'Inconsolata';
+	font-weight: 400;
 	font-style: normal;
+	font-size: 16px;
 	background-color: #ecf0f1;
-	padding: 0 .5em 0 .5em;
+	padding: .1em .25em .1em .25em;
+	border-radius: 4px;
+}
+
+pre{
+	margin: 0;
+}
+
+article ol{
+	font-size: 18px;
+	font-family: 'Domine';
+	padding-left: 2em;
 }
 
 article blockquote{
-	background-color: #ecf0f1;
+	background-image: url('images/quotes.png');
+	background-size: 200px;
+	background-repeat: no-repeat;
 	font-weight: bold;
 	padding: .25em;
 }
 
-article p.articleheadings{
-	font-weight: bold;
-	font-size: 20px;
-	margin: 1.5em .5em .75em .5em;
+blockquote ul{
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 300;
+	margin: .25em;
+	padding-left: 2em;
 }
 
-article ul, ol{
-	font-size: 14px;
+.codeblock{
+	background-color: #ecf0f1;
+	background-image: none;
 }
+
+.articleheadings{
+	font-family: 'Roboto';
+	font-weight: bold;
+	color: #48647c;
+	font-size: 20px;
+}
+
+.subheading{
+	font-family: 'Roboto';
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+
 
 
 /*********************************************************
@@ -410,19 +464,29 @@ Responsive Design
 	.blogbox{
 		width: 100%;
 		border: none;
-		padding: 0;
+		padding: .5em;
+		border-top: 1px solid #ddd;
 	}
 	header h1 {
-		font-size: 72px;
+		font-size: 50px;
 	}
 
 	header h2{
 		font-size: 14px;
 	}
 
+	#pagetitle{
+		font-size: 18px;
+	}
+
+	header{
+		padding-bottom: 5px;
+	}
+
 	#giantbuttons ul li{
 		width: 250px;
-		border: 4px solid #b03476;
+		font-size: 16px;
+		border-color: #b03476;
 	}
 
 	#innerwrapper{
@@ -443,25 +507,26 @@ Responsive Design
 
 	header h1{
 		text-align: left;
-		font-size: 72px;
+		font-size: 64px;
 	}
 
 	header h2{
 		text-align: left;
-		margin-left: 2em;
+		margin-left: 3.5em;
+		font-size: 16px;
+	}
+	#giantbuttons ul li{
+		width: 250px;
 		font-size: 18px;
 	}
+
+
 }
 
 @media screen and (min-width: 970px){
 	#sidebar{
 		width: 250px;
 	}
-
-	.blogbox{
-
-	}
-
 
 	header h1{
 		text-align: center;
@@ -470,9 +535,13 @@ Responsive Design
 
 	header h2{
 		text-align: center;
-		margin-left: 2em;
+		margin-left: 0;
+		font-size: 20px;
 	}
-
+	#giantbuttons ul li{
+		width: 250px;
+		font-size: 18px;
+	}
 }
 
 @media screen and (min-width: 1096px){
@@ -484,6 +553,11 @@ Responsive Design
 		width: 55%;
 		margin: 0 auto;
 	}
+	#giantbuttons ul li{
+		width: 400px;
+		font-size: 22px;
+	}
+
 }
 
 @media screen and (min-width: 1200px){
