@@ -178,18 +178,20 @@ Inner Wrapper
 #giantbuttons ul{
 	list-style: none;
 	padding: 0;
+	margin: 0 auto;
 }
 
 #giantbuttons ul li{
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	padding: .25em;
+	padding-left: 4em;
 	margin: 0 auto;
 	margin-bottom: .5em;
 	border: 4px solid white;
 	border-radius: 150px;
-	width: 300px;
-	text-align: center;
+	/*width: 300px;*/
+	text-align: left;
 	display: block;
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.5);
@@ -523,6 +525,7 @@ Responsive Design
 	#giantbuttons ul li{
 		width: 250px;
 		font-size: 18px;
+		padding-left: 3em;
 	}
 
 
@@ -561,6 +564,7 @@ Responsive Design
 	#giantbuttons ul li{
 		width: 400px;
 		font-size: 22px;
+		padding-left: 4em;
 	}
 
 }
