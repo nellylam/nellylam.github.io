@@ -144,7 +144,7 @@
 							Think of it like a folder for types of files. A folder called Receipts would be perfect for objects such as receipts!
 						</p>
 						<p>
-							It is also easy to imagine it like how taxonomy classifies species of animals. For example, Birds include Robins and Finches. Robins and Finches have characteristics of birds, but they have their own distinct features. If Bird was a Ruby class, Robin would be a class that inherits the Bird traits and if need be, modify or overwrite them.
+							It is also easy to imagine it like the way taxonomy classifies species of animals. For example, Birds include Robins and Finches. Robins and Finches have characteristics of birds, but they have their own distinct features. If Bird was a Ruby class, Robin would be a class that <em>inherits</em> the Bird traits and if need be, modify or overwrite them.
 						</p>
 						<p>
 							In our Ruby Schoolhouse, we organize the school into &#34;classes&#34; you can take such as Science or Imagination.
@@ -185,6 +185,25 @@
 <blockquote class="codeblock">
 	<pre class="prettyprint">
 		<code>
+  class Inanimates
+
+	def initialize(name)
+		@name = name
+		@condition = true
+	end
+
+	def dimensions(x, y, z)
+		@size = {x: x, 
+				 y: y, 
+				 z: z}
+	end
+
+	def condition?
+		@condition ? "good" : "bad"
+	end
+
+  end
+
   class Planter < Inanimates
 	attr_reader :name, :contents
 
