@@ -26,9 +26,10 @@ body {
 a {
 	color: #b03476;
 }
+
 a:active {
-	color: #48647c;
-	font-weight: bold;
+	color: white;
+	font-weight: normal;
 }
 
 a:hover{
@@ -230,6 +231,11 @@ Inner Wrapper
 
 #homegiantbuttons ul li{
 	text-align: center;
+}
+
+#homegiantbuttons ul li a{
+	width: 200px;
+	margin: 0 auto;
 }
 
 /*********************************************************
