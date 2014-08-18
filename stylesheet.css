@@ -407,11 +407,14 @@ article em.code{
 
 pre{
 	margin: 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
 code{
 	font-family: 'Inconsolata';
 	font-weight: 400;
+	font-size: 14px;
 }
 
 .codeblock{
