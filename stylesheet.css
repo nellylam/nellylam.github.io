@@ -2,6 +2,9 @@ h1, h2{ /*reset for mobile browsers */
 font-weight: normal;
 }
 
+.prettyprint{
+	font-family: 'Inconsolata';
+}
 /*********************************************************
 General-Body
 **********************************************************/
@@ -406,6 +409,17 @@ pre{
 	margin: 0;
 }
 
+code{
+	font-family: 'Inconsolata';
+	font-weight: 400;
+}
+
+.codeblock{
+	background-color: #ecf0f1;
+	background-image: none;
+}
+
+
 article ol{
 	font-size: 18px;
 	font-family: 'Domine';
@@ -426,11 +440,6 @@ blockquote ul{
 	font-weight: 300;
 	margin: .25em;
 	padding-left: 2em;
-}
-
-.codeblock{
-	background-color: #ecf0f1;
-	background-image: none;
 }
 
 .articleheadings{
