@@ -106,28 +106,28 @@
   class Schoolhouse
 
 	def initialize
-		puts "Congrats! You've now instantiated a Schoolhouse object!"
-		@roster = {}
+	  puts "Congrats! You've now instantiated a Schoolhouse object!"
+	  @roster = {}
 	end
 
 	def topic(topic_name)
-		@topic = topic_name
+	  @topic = topic_name
 	end
 
 	# This saves the teachers name
 	def set_teacher(name)
-		@teacher = name
+	  @teacher = name
 	end
 
 	# This returns the class roster
 	def roster
-		@roster
+	  @roster
 	end
 
 	def add_student(name)
-		@roster[name.to_sym] = {name: name} 
-		# Here, I'm adding a student but the student is a hash with a name.
-		# This way each student has a 'folder' of their information.
+	  @roster[name.to_sym] = {name: name} 
+	  # Here, I'm adding a student but the student is a hash with a name.
+	  # This way each student has a 'folder' of their information.
 	end
   end
   	</code>
@@ -167,7 +167,7 @@
   class Imagination < Schoolhouse
 
 	def idea_maker(name_of_idea)
-		@idea = name_of_idea	
+	  @idea = name_of_idea	
 	end
 
   end
@@ -188,18 +188,18 @@
   class Inanimates
 
 	def initialize(name)
-		@name = name
-		@condition = true
+	  @name = name
+	  @condition = true
 	end
 
 	def dimensions(x, y, z)
-		@size = {x: x, 
-				 y: y, 
-				 z: z}
+	  @size = {x: x, 
+	           y: y, 
+	           z: z}
 	end
 
 	def condition?
-		@condition ? "good" : "bad"
+	  @condition ? "good" : "bad"
 	end
 
   end
@@ -208,12 +208,12 @@
 	attr_reader :name, :contents
 
 	def initialize(name)
-		@name = name
-		@contents = []
+	  @name = name
+	  @contents = []
 	end
 
 	def receive(object)
-		@contents << object
+	  @contents << object
 	end
 
   end
@@ -223,30 +223,30 @@
   	attr_reader :name, :height
 
 	def initialize(name)
-		@name = name
-		@height = 0
-		@planted = false
+	  @name = name
+	  @height = 0
+	  @planted = false
 	end
 
 	def plant_into(planter)
-		@planted = true
-		puts "#@name is now planted."
+	  @planted = true
+	  puts "#@name is now planted."
 	end
 
 	def water
-		unless @planted
-			puts "Cannot water, plant must be in a planter."
-		else
-			@height += 1
-		end
+	  unless @planted
+	    puts "Cannot water, plant must be in a planter."
+	  else
+	    @height += 1
+	  end
 	end
 
 	def measure
-		if @height > 0
-			puts "#@name is #@height inches tall!"
-		else
-			puts "Your plant has still not sprouted. Maybe it needs water."
-		end
+	  if @height > 0
+	    puts "#@name is #@height inches tall!"
+	  else
+	    puts "Your plant has still not sprouted. Maybe it needs water."
+	  end
 	end
 
   end
@@ -266,8 +266,8 @@
 	<pre class="prettyprint">
 		<code>
   def put_in_planter(seed, planter)
-	seed.plant_into(planter)
-	planter.receive(seed)
+    seed.plant_into(planter)
+    planter.receive(seed)
   end
 
   planter1 = Planter.new(planter1)
@@ -291,10 +291,8 @@
   # => rosemary_1 is 2 inches tall!
   
   def whats_inside(planter)
-  	this_planter = planter.name
-  	planter.contents.each do |plant|
-  		puts plant.name
-  	end
+    this_planter = planter.name
+    planter.contents.each {|plant| puts plant.name}
   end
   
   whats_inside(planter1)

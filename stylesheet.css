@@ -406,19 +406,18 @@ article em.code{
 }
 
 pre{
-	margin: 0;
-	white-space: pre-wrap;
-	word-wrap: break-word;
+	overflow: auto;
 }
 
 code{
+	background: none;
 	font-family: 'Inconsolata';
 	font-weight: 400;
 	font-size: 14px;
 }
 
 .codeblock{
-	background-color: #ecf0f1;
+	background-color: inherit;
 	background-image: none;
 }
 
@@ -489,6 +488,16 @@ Footer
 Responsive Design
 **********************************************************/
 
+@media screen and (max-width: 420px) {
+	article p{
+		font-size: 16px;
+	}
+
+	code{
+		font-size: 12px;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	#sidebar {
 		display: none;
@@ -548,11 +557,11 @@ Responsive Design
 		margin-left: 3.5em;
 		font-size: 16px;
 	}
+
 	.giantbuttons ul li{
 		width: 250px;
 		font-size: 18px;
 	}
-
 
 }
 
