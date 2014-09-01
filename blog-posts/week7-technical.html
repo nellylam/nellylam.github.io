@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Tangerine|Roboto:400,300,500,400italic|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+	<!-- change the title below -->
+	<title>Code Habits | SQL vs NoSQL</title>	
+</head>
+<body>
+	<div id='wrapper'>
+		<header>
+			<hgroup>
+			<h1>Code Habits</h1>
+			<h2>Habits of a coder</h2>
+			</hgroup>
+		<nav>
+			<!-- home about contact blog etc. -->
+			<ul id="navlinks">
+				<li><a href="../index.html">Home</a></li>
+				<li>
+					<a href="../blog_index.html">Blog</a>
+					<ul>
+						<!-- update link here -->
+						<li><a href="week7-technical.html">Week 7 - SQL vs NoSQL</a></li>
+						<li><a href="week7-cultural.html">Week 7 - Value Affirmation</a></li>
+						<li><a href="week6-technical.html">Week 6 - Inheritance vs Composition</a></li>
+						<li><a href="week6-cultural.html">Week 6 - Stereotype Threat</a></li>
+						<li><a href="week5-technical.html">Week 5 - Ruby Schoolhouse</a></li>
+ 						<li><a href="week5-cultural.html">Week 5 - Pairing is Caring</a></li>
+						<li><a href="week4-technical.html">Week 4 - Arrays vs Hashes</a></li>
+						<li><a href="week4-cultural.html">Week 4 - Diversity in Tech</a></li>
+						<li><a href="week3-cultural.html">Week 3 - Thinking Styles</a></li>
+						<li><a href="week3-technical.html">Week 3 - Why Javascript?</a></li>
+						<li><a href="week2-technical.html">Week 2 - Classes and IDs</a></li>
+						<li><a href="week1-technical.html">Week 1 - Favorite Websites</a></li>
+						<li><a href="week1-cultural.html">Week 1 - Fireside Chat</a></li>
+					</ul>
+				</li>
+					
+				<li>
+					<a href="../project_index.html">Projects</a>
+					<ul>
+						<li><a href="../gps1.1/gps1.1.html" target=_blank>Week 2 - Pair Programming</a></li>
+						<li><a href="../responsive-design/starting-point.html" target=_blank>Week 2 - Responsive Design</a></li>
+					</ul>
+				</li>
+					
+				<li>
+					<a href="../about.html">About</a>
+					<ul>
+						<li><a href="../contact.html">Contact Me</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		</header>
+		<main id='innerwrapper'>
+			<aside id="sidebar">
+				<div id="bio">
+					<img src="../images/nelly-60px.jpg" alt="Profile Picture">
+					<h3>Hello, my name is Nelly.</h3>
+					<p>I am a novice programmer with 10 years of architecture background. I believe that if you put your mind to it, you can build an app that will change the world. Or just discover some really fun things that make life better. These are some of my daily musings. Welcome to my blog!</p>
+				</div>
+				<div id="socialmedia">
+					<h6>Social Me</h6>
+					<a href="http://twitter.com/nelleroo" target=_blank id="twitterlogo"><img src="../images/twitter-24.png" alt="Twitter Logo"></a>
+					<a href="https://www.facebook.com/nellylam" target=_blank id="facebooklogo"><img src="../images/facebook-24.png" alt="Facebook Logo"></a>
+					<a href="http://github.com/nellylam" target=_blank id="githublogo"><img src="../images/github-24.png" alt="GitHub Logo"></a>
+					<a href="http://plus.google.com/+nellylam1" target=_blank id="googlepluslogo"><img src="../images/googleplus-24.png" alt="Google Plus Logo"></a>
+					<a href="http://linkedin.com/in/nellylam/" target=_blank id="linkedinlogo"><img src="../images/linkedin-24.png" alt="Facebook Logo"></a>
+					<!-- Links to my social media pages -->
+				</div>
+			</aside>
+			<section id="blogwrapper">
+				<div class="blogbox">
+					<hgroup class="postheader">
+						<h3 class="postname">SQL vs NoSQL</h3>
+						<h4 class="author">By Nelly Lam</h4>
+						<h4 class="postdate">Sunday, August 31, 2014</h4>
+					</hgroup>
+					<article>
+						<!-- this is the article! -->
+						<img src="../images/hamlet-sql.png" alt="Hamlet - SQL or NoSQL">
+						<p>We&#39;ve done some work with SQL already, but what is NoSQL?</p>
+						<p class='articleheadings'>NoSQL means "Not Only SQL"</p>
+						<blockquote>&#34;A NoSQL database environment is, simply put, a non-relational and largely distributed database system that enables rapid, ad-hoc organization and analysis of extremely high-volume, disparate data types.&#34; - Planet Cassandra</blockquote>
+						<em class='subheading'>Other names for NoSQL:</em>
+						<p>
+							<ul>
+								<li>cloud databases</li>
+								<li>non-relational databases</li>
+								<li>Big Data databases</li>
+							</ul>
+						</p>
+						<em class='subheading'>Characteristics of NoSQL:</em>
+						<p>
+							<ul>
+								<li>Non relational</li>
+								<li>Scalable</li>
+								<li>Structures: hashes, maps, dictionaries</li>
+								<li>No pre-defined schema</li>
+								<li>No join operations</li>
+							</ul>
+						</p>
+						<em class='subheading'>Advantages of NoSQL:</em>
+						<p>
+							<ul>
+								<li>Cheap</li>
+								<li>Data are replicated and can be partitioned</li>
+								<li>Easy to distribute</li>
+								<li>Where SQL uses a schema to structure its data, NoSQL has no schema.</li>
+								<li>It can handle a LOT more data. We&#39;re talking about millions of users.</li>
+								<li>It&#39;s fast, and can quickly process large amount of data</li>
+							</ul>
+						</p>
+						<em class='subheading'>Disdvantages of NoSQL:</em>
+						<p>
+							<ul>
+								<li>NoSQL is still new, so it is sometimes buggy</li>
+								<li>Data is duplicated for redundancy</li>
+								<li>No standardized schema</li>
+								<li>No standard format for queries.</li>
+								<li>No standard language</li>
+								<li>Difficult to impose complicated structures</li>
+								<li>Depend on the application layer to enforce data integrity</li>
+								<li>No guarantee of support</li>
+								<li>Too many options</li>
+							</ul>
+						</p>
+						<p class='articleheadings'>There are different types of NoSql databases.</p>
+						<em class='subheading'>Key - Value</em>
+						<p>Key-value databases are easy to work with, scalable, and fast. They are useful for caching, quickly storing data for future use, queuing, distributing information and tasks, and keeping live information.</p>
+						<p>Examples of Key-Value databases include Redis, Riak, and Memcached / MemchacheDB.</p>
+						<em class='subheading'>Column Databases</em>
+						<p>This is similar to the row-and-column structure of a relational database, but does not include the strict rules of the relational database.</p>
+						<p>
+							Column based databases are powerful, and can keep important data of very large sizes. It’s not very flexible, but highly functional, and fast. They are good for keeping unstructured, non-volatile information that can be stored for a long time. They are also very scalable and can handle an extremely large amount of information.
+						</p>
+						<p>
+							Some examples of column databases are Cassandra, HBase, and Amazon SimpleDB.
+						</p>
+						<em class='subheading'>Document Databases</em>
+						<p>
+							Document databases are great for keeping large amounts of unrelated and complex information that is highly variable in structure. The objects are documents that are encoded in a common file format such as XML or PDF and stored as a value in a key-value pair. You can query the document.
+						</p>
+						<p>
+							Document databases are useful for nesting information in deeply complex data structures. They are also JavaScript friendly, interfacing with applications, by using JSON.
+						</p>
+						<p>
+							Some popular document databases are Couchbase, CouchDB, and MongoDB.
+						</p>
+						<em class='subheading'>Graph Databases</em>
+						<p>
+							Graph databases offer a unique way to store data that handle complex relational information. It deals with the relational information between two entities. Graph databases can model and handle the classification of information in a relational way.
+						</p>
+						<p>
+							Some popular examples of graph databases include OrientDB and Neo4J.
+						</p>
+						<p class='articleheadings'>When to use NoSQL databases:</p>
+							<ul>
+								<li>Size - when working with massively large sets of data.</li>
+								<li>Speed - extremely faster to write data, but reading can depend on which type of database and what is being queried.</li>
+								<li>Schema-free - flexibility in structure.</li>
+								<li>Automated replications and scaling - NoSQL administrators add redundancy using replication by simply adding secondary nodes to the primary nodes, and is therefore very scalable.</li>
+								<li>Multiple choices  - There are many models, and you can choose the one that best fits your data type.</li>
+							</ul>
+						<p class='articleheadings'>A Comparison of SQL and NoSQL (based on Google&#39;s App Engine CloudSQL vs Datastore)</p>
+							<table>
+								<tr>
+									<th></th>
+									<th>NoSQL(Datastore)</th>
+									<th>SQL(CloudSQL)</th>
+								</tr>
+								<tr>
+									<td>Queries</td>
+									<td>good</td>
+									<td>great</td>
+								</tr>
+								<tr>
+									<td>Transactions</td>
+									<td>good</td>
+									<td>great</td>
+								</tr>
+								<tr>
+									<td>Consistency</td>
+									<td>good</td>
+									<td>great</td>
+								</tr>
+								<tr>
+									<td>Scalability</td>
+									<td>great</td>
+									<td>good</td>
+								</tr>
+								<tr>
+									<td>Management</td>
+									<td>great</td>
+									<td>good</td>
+								</tr>
+								<tr>
+									<td>Schema</td>
+									<td>great</td>
+									<td>good</td>
+								</tr>
+							</table>
+						<p class='articleheadings'>Finally:</p>
+						<img src="../images/hamlet-judelaw.jpg" alt="Hamlet Jude Law">
+						<p>
+							<b>Conclusion:</b> it&#39;s a tie. They both offer great benefits, so it just depends what data you are storing.
+						</p>
+						<p>
+							It is possible to use both SQL and NoSQL in conjunction. SQL could store active data as memory, and NoSQL can store archived data, such as in a disk.
+						</p>
+						<p class='articleheadings'>Resources:</p>
+						<ol class='resource-links'>
+							<li><a href="http://planetcassandra.org/what-is-nosql/">What is NoSQL?</a> - Planet Cassandra</li>
+							<li><a href="https://www.youtube.com/watch?v=AMpvjJtcHsk">Introduction to NoSQL - VIDEO</a> - Ahmad Naser</li>
+							<li><a href="https://www.digitalocean.com/community/tutorials/a-comparison-of-nosql-database-management-systems-and-models">A Comparison Of NoSQL Database Management Systems And Models</a> - Digital Ocean</li>
+							<li><a href="http://databases.about.com/od/otherdatabases/a/Introduction-To-Nosql.htm">Introduction to NoSQL - Building Databases to Support Big Data</a> - Mike Chapple</li>
+						</ol>
+					</article>
+				</div>
+			</section>
+			<div id="sharepost">
+				<!-- This is where links to share this post will go -->
+
+			</div>
+		</main>
+	</div>
+	<div>
+		<!-- This will be the comment section -->
+
+	</div>
+
+	<div id="footer">
+		<p>&copy Copyright 2014, Code Habits | Nelly Lam. All Rights Reserved</p>
+	</div>
+
+</body>
+</html>
+
