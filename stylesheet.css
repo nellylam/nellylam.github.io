@@ -372,6 +372,7 @@ article a img {
 
 article img{
 	width: 100%;
+	margin: 5px 0 5px 0;
 }
 
 article figure{
@@ -437,6 +438,8 @@ article blockquote{
 	background-repeat: no-repeat;
 	font-weight: bold;
 	padding: .25em;
+	font-style: italic;
+	font-size: 18px;
 }
 
 blockquote ul{
@@ -522,6 +525,10 @@ Responsive Design
 	.resource-links {
 	font-family: 'Roboto';
 	font-size: 14px;
+	}
+
+	article blockquote {
+		font-size: 16px;
 	}
 }
 
