@@ -174,8 +174,7 @@ Inner Wrapper
 #innerwrapper{
 	padding: 10px;
 	overflow: hidden;
-	/*background-color: white;*/
-	background-image: url('images/canvas.jpg');
+	background-color: white;
 	background-repeat: repeat;
 }
 
