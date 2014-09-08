@@ -2,7 +2,7 @@ name: "Nelly"
 description: "Code Habits blog"
 
 url: "http://nellylam.github.io"
-baseurl: "http://nellylam.github.io"
+# baseurl: "http://nellylam.github.io"
 
 paginate: 10
 
