@@ -1,0 +1,51 @@
+---
+
+title: Week 2 - Classes and IDs
+layout: post
+
+---
+<p class='articleheadings'>Why would you use a class or id?</p>
+						<p>When designing a webpage, we use the language of html. Built into the language are elements such as <em class='code'>header</em>, <em class='code'>main</em>, <em class='code'>section</em>, <em class='code'>aside</em> etc. Each of those help the web designer layout their webpage, but they only go so far. As creative people tend to break the mold, it's easy to find a situation where the given elements will not accomplish the styling that one needs.</p>
+							
+						<p>Scenario A:</p>
+						<p>You want to create a container for all your blog posts on one page so you can add a blue background behind your articles, but there is no specific html element for that. You could use a <em class='code'>div</em>, but you have other <em class='code'>div</em> elements already, and you don't want to make all of those blue too.</p>
+
+						<p>Scenario B:</p>
+						<p>You want to highlight a quote from your article by styling it differently from all the other paragraph text. You may have to use more quotes later in the article too.</p>
+
+						<p>This is where classes and ids come in handy.</p>
+						<p class='articleheadings'>What are classes and ids?</p>
+						<p>Classes and ids are 'hooks' that can be attached to a particular element and then be 'selected' in the stylesheet (the CSS file).</p>
+						<p class='articleheadings'>How are they used?</p>
+						<p>To create a class or id, you just have to define it inside the element tag.</p>
+						<p><em>In html:</em></p>
+<blockquote class="codeblock">
+<pre class="prettyprint">
+	<code>
+	&lt;div class='quotes'&gt;
+	&lt;div id='blogwrapper'&gt;
+	</code>
+</pre>
+</blockquote>
+						<p><em>In css:</em></p>
+						<blockquote class="codeblock">
+<pre class="prettyprint">
+	<code>
+	.quotes{
+		width: 600px;
+	}
+	#blogwrapper{
+		width: 300px;
+	}
+	</code>
+</pre>
+					</blockquote>
+					<p>The only difference when selecting the element in the css is that classes are called by using <em>.</em> and ids are called by using <em>#</em> in front of their names.</p>
+					
+					<p class='articleheadings'>What is the difference between a class or an id?</p>
+					<p>The only difference between a class and an id is that classes can be used more than once on a page, and an id once and only once.</p>
+					<p>A class is like a common characteristic or a shared attribute. When you think of a class of students, you think many. Or economy class on an airplane, which contains many seats.</p>
+					<p>An id is unique. If I'm a teacher and I take attendence by calling out a student, I would call out one unique id.</p>
+					<p class='articleheadings'>When should I use a class, and when should I use an id?</p>
+					<p>Ask yourself, will I be using this more than once? If so, make a class. If not, make an id.</p>
+					<p>Now see if you can figure out which ones to use for Scenario A and B above.</p>

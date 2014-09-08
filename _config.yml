@@ -1,0 +1,11 @@
+name: "Nelly"
+description: "Code Habits blog"
+
+url: "http://localhost:4000"
+baseurl: "http://localhost:4000"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments

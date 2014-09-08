@@ -1,0 +1,31 @@
+<nav>
+  <!-- home about contact blog etc. -->
+  <ul id="navlinks">
+    <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+    <li>
+      <a href="{{ site.baseurl }}/blog/index.html">Blog</a>
+      <ul>
+        {% for post in site.posts %}
+          
+          <li><a href="{{ site.baseurl }}{{post.url}}index.html">{{ post.title }}</a></li>
+
+        {% endfor %}
+      </ul>
+    </li>
+      
+    <li>
+      <a href="{{ site.baseurl }}/projects/index.html">Projects</a>
+      <ul>
+        <li><a href="{{ site.baseurl }}/projects/gps1.1/gps1.1.html" target=_blank>Week 2 - Pair Programming</a></li>
+        <li><a href="{{ site.baseurl }}/projects/responsive-design/starting-point.html" target=_blank>Week 2 - Responsive Design</a></li>
+      </ul>
+    </li>
+      
+    <li>
+      <a href="{{ site.baseurl }}/about/index.html">About</a>
+      <ul>
+        <li><a href="{{ site.baseurl }}/contact/index.html">Contact Me</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,235 @@
+---
+
+title: Week 5 - Ruby Schoolhouse
+layout: post
+
+---
+						<p class='articleheadings'>Welcome to Ruby Schoolhouse!</p>
+						<p>
+							What is Ruby but just a fancy way of creating objects that interact with each other? Ruby Schoolhouse is here to show you how you can create a world of objects.
+						</p>
+						<p class='articleheadings'>Introductions</p>
+						<p>
+							You can take the class on Arrays or Strings if you are new to this. Those are great classes to dive into when you are a beginner. There are lots of methods you can use with Array and String objects.
+						</p>
+						<p>
+							Once you get the hang of the built-in Ruby classes, you may find yourself wondering why you are building the same objects over and over again. Here at Ruby Schoolhouse, we want you to build your own classes!
+						</p>
+						<p>
+							<em class='subheading'>What?? Build your own classes? Is this legal?</em>
+						</p>
+						<p>
+							Uh...yes... Follow me.
+						</p>
+						<p>
+							Ok, we aren&#39;t actually going anywhere. You can make the class right in your favorite text editor!
+						</p>
+
+						<blockquote class="codeblock">
+<pre class="prettyprint">
+	<code>
+  class Schoolhouse
+
+	def initialize
+	  puts "Congrats! You've now instantiated a Schoolhouse object!"
+	  @roster = {}
+	end
+
+	def topic(topic_name)
+	  @topic = topic_name
+	end
+
+	# This saves the teachers name
+	def set_teacher(name)
+	  @teacher = name
+	end
+
+	# This returns the class roster
+	def roster
+	  @roster
+	end
+
+	def add_student(name)
+	  @roster[name.to_sym] = {name: name} 
+	  # Here, I'm adding a student but the student is a hash with a name.
+	  # This way each student has a 'folder' of their information.
+	end
+  end
+  	</code>
+  </pre>
+  						</blockquote>
+						<p>
+							<em class='subheading'>What are classes but just fancy ways of organizing fancy objects,</em> if you&#39;re the fancy type of builder, but you can also use it to build simple objects.
+						</p>
+						<p class='articleheadings'>Why do you want to make a class?</p>
+						<p>
+							In Ruby, everything is an object. The rule of thumb I use is if I foresee the need to make more than one of an object that has certain functionality, I should make a class.
+						</p>
+						<p>
+							Think of it like a folder for types of files. A folder called Receipts would be perfect for objects such as receipts!
+						</p>
+						<p>
+							It is also easy to imagine it like the way taxonomy classifies species of animals. For example, Birds include Robins and Finches. Robins and Finches have characteristics of birds, but they have their own distinct features. If Bird was a Ruby class, Robin would be a class that <em>inherits</em> the Bird traits and if need be, modify or overwrite them.
+						</p>
+						<p>
+							In our Ruby Schoolhouse, we organize the school into &#34;classes&#34; you can take such as Science or Imagination.
+						</p>
+						<p>
+							When we create a new class, we can inherit everything from the Schoolhouse class. Science objects will have access to Schoolhouse methods.
+						</p>
+<blockquote class="codeblock">
+	<pre class="prettyprint">
+		<code>
+  class Science < Schoolhouse
+
+	def grow(plant)
+	  @plant = plant
+	end
+
+  end
+
+
+  class Imagination < Schoolhouse
+
+	def idea_maker(name_of_idea)
+	  @idea = name_of_idea	
+	end
+
+  end
+  	</code>
+  </pre>
+</blockquote>
+						<p>
+							We also like to fill our room with useful things, so the students can use them for their fun learning activities!
+						</p>
+						<p>
+							Take a look around!
+						</p>
+						
+
+<blockquote class="codeblock">
+	<pre class="prettyprint">
+		<code>
+  class Inanimates
+
+	def initialize(name)
+	  @name = name
+	  @condition = true
+	end
+
+	def dimensions(x, y, z)
+	  @size = {x: x, 
+	           y: y, 
+	           z: z}
+	end
+
+	def condition?
+	  @condition ? "good" : "bad"
+	end
+
+  end
+
+  class Planter < Inanimates
+	attr_reader :name, :contents
+
+	def initialize(name)
+	  @name = name
+	  @contents = []
+	end
+
+	def receive(object)
+	  @contents << object
+	end
+
+  end
+
+  class Plant
+
+  	attr_reader :name, :height
+
+	def initialize(name)
+	  @name = name
+	  @height = 0
+	  @planted = false
+	end
+
+	def plant_into(planter)
+	  @planted = true
+	  puts "#@name is now planted."
+	end
+
+	def water
+	  unless @planted
+	    puts "Cannot water, plant must be in a planter."
+	  else
+	    @height += 1
+	  end
+	end
+
+	def measure
+	  if @height > 0
+	    puts "#@name is #@height inches tall!"
+	  else
+	    puts "Your plant has still not sprouted. Maybe it needs water."
+	  end
+	end
+
+  end
+
+
+		</code>
+	</pre>
+</blockquote>
+						<p class="articleheadings">Now it gets interesting</p>
+						<p><em class='subheading'>Creating new objects</em>
+							Now that we have set up these classes, we can <em>instantiate</em> them. Basically, you can say <em class='code'>Plant.new</em> and you would have created an <em>instance</em> of a Plant object, and you can create as many of them as you want.
+						</p>
+						<p><em class='subheading'>Interact with the objects</em>
+							Now you can call the class methods on it. You can water it and measure it like this:
+						</p>
+<blockquote class="codeblock">
+	<pre class="prettyprint">
+		<code>
+  def put_in_planter(seed, planter)
+    seed.plant_into(planter)
+    planter.receive(seed)
+  end
+
+  planter1 = Planter.new(planter1)
+
+  basil = Plant.new("basil_1")
+  put_in_planter(basil, planter1)
+  
+  # => basil_1 is now planted.
+  basil.water
+  basil.water
+  basil.measure
+  # => basil_1 is 2 inches tall!
+  
+  rosemary = Plant.new("rosemary_1")
+  put_in_planter(rosemary, planter1)
+  
+  # => rosemary_1 is now planted.
+  rosemary.water
+  rosemary.water
+  rosemary.measure
+  # => rosemary_1 is 2 inches tall!
+  
+  def whats_inside(planter)
+    this_planter = planter.name
+    planter.contents.each {|plant| puts plant.name}
+  end
+  
+  whats_inside(planter1)
+  # => basil_1
+  # => rosemary_1
+		</code>
+	</pre>
+</blockquote>
+						<p>
+							
+						</p>
+						<p class="articleheadings">What did you think?</p>
+						<p>
+							That was just a basic introduction to what you could do with objects using classes. I hope you are excited to make your own classes for your objects!
+						</p>
