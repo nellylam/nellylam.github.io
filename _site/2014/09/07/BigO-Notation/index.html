@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
     <!-- change the title below -->
-    <title>Week 4 - Arrays vs Hashes</title>  
+    <title>Week 8 - BigO Notation</title>  
   </head>
   <body>
     <div id='wrapper'>
@@ -127,22 +127,49 @@
 	<section id="blogwrapper">
 		<div class="blogbox">
 			<hgroup class="postheader">
-				<h3 class="postname">Week 4 - Arrays vs Hashes</h3>
+				<h3 class="postname">Week 8 - BigO Notation</h3>
 				<h4 class="author">By Nelly Lam</h4>
-				<h4 class="postdate">10 August 2014</h4>
+				<h4 class="postdate">07 September 2014</h4>
 			</hgroup>
 			<article>
-				<p class='articleheadings'>How Things are Stored</p>
-<p> Arrays and hashes are both ordered collections.</p>
-<p> An array is an ordered collection of objects. Since anything in Ruby is an object, anything can be stored as an element in an array. The way an array organizes the elements is by a zero-based index. </p>
-<p> A hash is an ordered collection of keyed values. Each element in a hash is called a key-value pair. The order is based on the <em>insertion order</em>, the order in which the key element is created.</p>
-<p class='articleheadings'>When to use an Array vs a Hash</p>
-<p>We always come across the question of how to best collect and organize our data. To decide which one to use, one must first understand what is the type of data that is being stored, and how will it be manipulated, and how will it be accessed?</p>
-<p><em class='subheading'>Is the type of data a really long list that must stay in a particular order?</em> For example, you would probably want to keep the order of a sentence string that has been split into an array of letters. If it does not need to stay in a particular order, such as a set of key-value pairs such as <em class='code'>name: &#39;Nelly&#39;</em> and <em class='code'>age: 28</em>, then a hash is probably the better option.</p>
-<p><em class='subheading'>How will you be manipulating the data once it is stored?</em> The Array in Ruby includes an extensive list of methods that you can use to manipulate it. Hashes also come with many methods to manipulate them, but the list is more limited.</p>
-<p><em class='subheading'>How you plan to access the elements in your collection</em> may be the deciding factor. In a hash, you can lookup a value based on the key, or vice versa. In an array, you lookup an element based on the index. It is easier to access a value based on a key, because usually the key is a variable name, and the order is not important. For example, <em class='code'>hash_nelly[:age] => 28</em>. You can only access elements in an array if you know exactly which index it is in: <em class='code'>sentence_array[0] = 'a'</em>.</p>
-<p>I find that arrays are often used when I need to iterate through something in a specific order, add or delete the first or last elements, or if I need to iterate through standalone elments.</p>
-<p>Hashes come in handy when there are key-value pairs or associative data that must stick together, or when a list of data belongs to a variable, almost like when working with classes. The best example is that of a person, which has many attributes such as name, age, sex, favorite colors, etc. Sometimes a hash is used instead of creating a new class. It is also easy to picture this if you have worked with JavaScript object literals.</p>
+				<p>BigO Notation, also known as BigOh Notation, is used to measure the complexity of an algorithm in computer science.</p>
+
+<p>In other words, it is used to describe the time that it takes to execute an algorithm if scaled to the worst case scenario. For example if the algorithm were to be ran 1 million times instead of once. How much longer will it take?</p>
+
+<p>Some things to know about BigO Notation:
+- It is also used in mathematics, but we will focus on how it’s used in computer science and programming.
+- It measures the worst-case scenario, not the average nor the best case.</p>
+
+<p>BigO Basics
+These are the notations for different complexities and what it means:</p>
+
+<p>O(1) - The algorithm will always finish in the same amount of time no matter how many times it is ran.</p>
+
+<p>O(n) - This represents a linear relationship. The larger the input data, the longer it would take, proportionally.</p>
+
+<p>O(n<sup>2</sup>) - An increase of twice the size of a data set would quadruple the size of the algorithm.</p>
+
+<p>O(2<sup>N</sup>) - An increase of one step will double the size of the algorithm. This is exponential and an grow really quickly.</p>
+
+<p>O(n!) - factorial or combinatorial complexity can also grow extremely fast. A good example would be the <a href="http://en.wikipedia.org/wiki/Travelling_salesman_problem">traveling salesman problem</a>.</p>
+
+<p>O(log N) - This describes a very common algorithm in programming, called the “binary search.” There’s actually a really good example for this: The telephone book. To find a name in the telephone book, you would open it in the middle, evaluate if the name is in the first or second half of the book, ignore the half that does not apply, essentially halving the size of the book with every iteration. So at first, an increase in data input will increase the performance of the algorithm significantly, but it eventually levels off.</p>
+
+<p>What they look like:
+<img src="/images/bigograph.png" alt="Big O Graph" />
+-BigOCheatsheet.com</p>
+
+<p>This was just a basic overview of Big O Notation. I hope this will hold you over so that at least you can understand some idea of Big O Notation when you see it.</p>
+
+<p><img src="/images/traveling_salesman.png" alt="The Traveling Salesman Problem" />
+-snatched from <a href="http://xkcd.com/399/">xkcd.com</a></p>
+
+<p>Resources:
+<a href="http://stackoverflow.com/questions/487258/plain-english-explanation-of-big-o">Plain English Explanation of Big O</a> - Stack Overflow
+<a href="http://bigocheatsheet.com/">BigO Cheatsheet</a>
+<a href="http://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> - Wikipedia
+<a href="http://en.wikipedia.org/wiki/Time_complexity">Time Complexity</a> - Wikipedia</p>
+
 			</article>
 		</div>
 	</section>
