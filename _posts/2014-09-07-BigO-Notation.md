@@ -15,10 +15,11 @@ layout: post
 	<ul>
 		<li>It is also used in mathematics, but we will focus on how it’s used in computer science and programming.</li>
 		<li>It measures the worst-case scenario, not the average nor the best case.</li>
-		<li>- It only cares about the most significant part of the complexity. For example, n<sup>2</sup> + 2n can be simplified to n<sup>2</sup>.</li>
+		<li>It only cares about the most significant part of the complexity. For example, n<sup>2</sup> + 2n can be simplified to n<sup>2</sup>.</li>
 	</ul>
 </p>
-<p>BigO Basics
+<p class='articleheadings'>BigO Basics</p>
+<p>
 These are the notations for different complexities and what it means:</p>
 
 <p><em class='subheading'>O(1)</em> - The algorithm will always finish in the same amount of time no matter how many times it is ran.</p>
@@ -29,7 +30,7 @@ These are the notations for different complexities and what it means:</p>
 
 <p><em class='subheading'>O(2<sup>N</sup>)</em> - An increase of one step will double the size of the algorithm. This is exponential and an grow really quickly.</p>
 
-<p><em class='subheading'>O(n!)</em> - factorial or combinatorial complexity can also grow extremely fast. A good example would be the <a href="http://en.wikipedia.org/wiki/Travelling_salesman_problem">traveling salesman problem</a>.</p>
+<p><em class='subheading'>O(n!)</em> - factorial or combinatorial complexity can also grow extremely fast. A good example would be the <a href="http://en.wikipedia.org/wiki/Travelling_salesman_problem">travelling salesman problem</a>.</p>
 
 <p><em class='subheading'>O(log N)</em> - This describes a very common algorithm in programming, called the “binary search.” There’s actually a really good example for this: The telephone book. To find a name in the telephone book, you would open it in the middle, evaluate if the name is in the first or second half of the book, ignore the half that does not apply, essentially halving the size of the book with every iteration. So at first, an increase in data input will increase the performance of the algorithm significantly, but it eventually levels off.</p>
 
@@ -39,7 +40,7 @@ These are the notations for different complexities and what it means:</p>
 
 <p>This was just a basic overview of Big O Notation. I hope this will hold you over so that at least you can understand some idea of Big O Notation when you see it.</p>
 
-<img src="{{ site.baseurl }}/images/traveling_salesman.png" alt="The Traveling Salesman Problem" />
+<img src="{{ site.baseurl }}/images/travelling_salesman.png" alt="The Travelling Salesman Problem" />
 <figcaption>-snatched from <a href="http://xkcd.com/399/">xkcd.com</a></figcaption>
 
 <p>Resources:
