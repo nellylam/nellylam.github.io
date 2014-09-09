@@ -179,8 +179,8 @@ Inner Wrapper
 #innerwrapper{
 	padding: 10px;
 	overflow: hidden;
-	/*background-color: white;*/
-	background-image: url('{{site.baseurl}}images/canvas.jpg');
+	background-color: #f1f1f1;
+	/*background-image: url('{{site.baseurl}}images/canvas.jpg');*/
 	background-repeat: repeat;
 }
 
