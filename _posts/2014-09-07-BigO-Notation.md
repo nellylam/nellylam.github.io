@@ -43,10 +43,11 @@ These are the notations for different complexities and what it means:</p>
 <img src="{{ site.baseurl }}/images/travelling_salesman.png" alt="The Travelling Salesman Problem" />
 <figcaption>-snatched from <a href="http://xkcd.com/399/">xkcd.com</a></figcaption>
 
-<p>Resources:
-<ul>
+<p class='articleheadings'>Resources:</p>
+<p>
+<ol class='resource-links'>
 	<li><a href="http://stackoverflow.com/questions/487258/plain-english-explanation-of-big-o">Plain English Explanation of Big O</a> - Stack Overflow</li>
 	<li><a href="http://bigocheatsheet.com/">BigO Cheatsheet</a></li>
 	<li><a href="http://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> - Wikipedia</li>
 	<li><a href="http://en.wikipedia.org/wiki/Time_complexity">Time Complexity</a> - Wikipedia</li>
-</ul></p>
+</ol></p>
