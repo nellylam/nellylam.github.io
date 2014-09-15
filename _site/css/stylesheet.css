@@ -1694,7 +1694,7 @@ body {
 
 .homepage {
 	background-image: url('/images/windmills.png');
-	background-size: 100%;
+	width: 100%;
 }
 
 #wrapper{

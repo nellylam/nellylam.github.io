@@ -25,7 +25,7 @@ body {
 
 .homepage {
 	background-image: url('{{site.baseurl}}/images/windmills.png');
-	background-size: 100%;
+	width: 100%;
 }
 
 #wrapper{
