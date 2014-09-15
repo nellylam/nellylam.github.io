@@ -19,8 +19,10 @@ body {
 	margin: 0 auto;
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
+	background-image: url('{{site.baseurl}}/images/windmills.png');
+	background-size: 100%;
 	font-weight: 300; 
-	background-repeat:repeat;
+	background-repeat:no-repeat;
 }
 
 #wrapper{
