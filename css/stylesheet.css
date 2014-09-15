@@ -58,7 +58,7 @@ header {
 	text-align: center;
 	background-image: url('{{site.baseurl}}/images/windmills.png');
 	width: 100%;
-	height: 400px;
+/*	height: 400px;*/
 }
 
 header hgroup{
