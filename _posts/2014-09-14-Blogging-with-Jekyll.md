@@ -1,6 +1,6 @@
 ---
 
-title: Week 9 - How to Ask Questions
+title: Week 9 - Blogging with Jekyll
 layout: post
 
 ---
