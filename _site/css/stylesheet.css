@@ -1731,7 +1731,8 @@ header {
 }
 
 header hgroup{
-	margin-top: 200px;
+	vertical-align: middle;
+	min-height: 400px;
 }
 
 header h1 {
