@@ -23,11 +23,6 @@ body {
 	background-repeat:no-repeat;
 }
 
-.homepage {
-	background-image: url('{{site.baseurl}}/images/windmills.png');
-	width: 100%;
-}
-
 #wrapper{
 	background-color: #ecf0f1;
 	margin: 0 auto;
@@ -60,8 +55,9 @@ a:visted {
 Header
 **********************************************************/
 header {
-	background-color: white;
-	text-align: center;	
+	text-align: center;
+	background-image: url('{{site.baseurl}}/images/windmills.png');
+	width: 100%;
 }
 
 header hgroup{
@@ -76,7 +72,7 @@ header h1 {
 	padding-bottom: 0;
 	margin: 0;
 	margin-bottom: -8px;
-	color: #b03476;
+	color: #ddd;
 }
 
 header h2{
