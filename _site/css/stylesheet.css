@@ -1688,10 +1688,13 @@ body {
 	margin: 0 auto;
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
-	background-image: url('/images/windmills.png');
-	background-size: 100%;
 	font-weight: 300; 
 	background-repeat:no-repeat;
+}
+
+.homepage {
+	background-image: url('/images/windmills.png');
+	background-size: 100%;
 }
 
 #wrapper{
