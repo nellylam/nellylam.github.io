@@ -610,6 +610,7 @@ Responsive Design
 	.giantbuttons{
 		width: 350px;
 		margin: 0 auto;
+		background-color: #ecf0f1;
 	}
 
 	.giantbuttons ul li{
