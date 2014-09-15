@@ -1773,7 +1773,7 @@ Nav Bar
 	box-shadow: 0 0 3px #333;
 	padding: .25em;
 	list-style: none;
-	float: left;
+	float: right;
 	width: 100%;
 	position: relative;
 	z-index:5;
@@ -1785,7 +1785,7 @@ Nav Bar
 
 
 #navlinks li{
-	float:right;
+	float:left;
 	margin-right:10px;
 	position:relative;
 }
