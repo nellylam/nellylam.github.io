@@ -116,7 +116,7 @@ Nav Bar
 
 
 #navlinks li{
-	float:left;
+	float:right;
 	margin-right:10px;
 	position:relative;
 }
